@@ -1,0 +1,136 @@
+
+:root {
+  --primary-color: #007bff;          
+  --primary-color-light: #66a3ff;  
+  --background-color: #f5f5f5;   
+  --button-background-light: #e9ecef;
+  --button-background-dark: #343a40;
+  --button-text-light: #212529;    
+  --button-text-dark: #ffffff;     
+  --textarea-background: #ffffff;    
+  --textarea-text: #495057;       
+  --scrollbar-track-color: #ced4da; 
+  --scrollbar-thumb-color: #6c757d; 
+}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    max-height: 400px;
+    box-sizing: border-box;
+  }
+  
+  header {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    text-align: left;
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+    flex: 1;
+    background-color: var(--textarea-bg);
+    color: var(--textarea-text);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+  
+  textarea::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 5px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  button {
+    color: var(--button-text-light);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    user-select: none;
+  }
+  
+  button.cancel {
+    background-color: #dddddd; 
+  }
+  
+  button.summarize {
+    background-color: var(--primary-color);
+    color: var(--button-text-dark);
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button.cancel:hover {
+    background-color: #cccccc;
+  }
+  
+  body.dark-mode {
+    background-color: #333333;
+    color: #f9f9f9;
+  }
+  
+  body.dark-mode header {
+      color: var(--primary-color-light);
+  }
+  
+  body.dark-mode textarea {
+    background-color: #444444;
+    color: #f9f9f9;
+  }
+  
+  body.dark-mode button.cancel {
+    background-color: #555555;
+    color: var(--button-text-dark);
+  }
+  
+  body.dark-mode button.summarize {
+    background-color: var(--primary-color-light);
+  }
+  
+  body.dark-mode button.cancel:hover {
+    background-color: #666666;
+  }
+  
+  #theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 1000;
+    user-select: none;
+  }
+  
