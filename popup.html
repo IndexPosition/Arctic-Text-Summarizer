@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arctic - Simplified Summarization</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #f8f9fa;
+      --accent-color: #6c757d;
+      --background-gradient: linear-gradient(135deg, #007bff, #6610f2);
+      --text-color: #333;
+      --font-sans: 'Roboto', sans-serif;
+      --navbar-height: 60px;
+      --border-radius: 10px;
+      --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      line-height: 1.6;
+      min-width: 400px;
+      max-width: 600px;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+    }
+
+    .navbar {
+      height: var(--navbar-height);
+      background: var(--background-gradient);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      box-shadow: var(--box-shadow);
+    }
+    .navbar h1 {
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(0,123,255,0.9), rgba(102,16,242,0.9)), url('https://source.unsplash.com/800x600/?arctic,ice');
+      background-size: cover;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom-left-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      font-weight: 300;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .hero .cta-btn {
+      background-color: #fff;
+      color: var(--primary-color);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1em;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: var(--box-shadow);
+    }
+    .hero .cta-btn:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
+    .container {
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      transition: transform 0.3s ease;
+    }
+    .section:hover {
+      transform: translateY(-5px);
+    }
+    .section h2 {
+      font-size: 1.7em;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+    .section p {
+      margin-bottom: 10px;
+      font-size: 1em;
+      color: var(--accent-color);
+    }
+    .section strong {
+      color: var(--text-color);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 0.8em;
+      color: var(--accent-color);
+      border-top: 1px solid var(--accent-color);
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Arctic</h1>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Arctic</h1>
+    <p>Your go-to tool for quick and efficient text summarization</p>
+    <a href="#about" class="cta-btn">Learn More</a>
+  </section>
+
+  <div class="container">
+    <div id="about" class="section">
+      <h2>About Arctic</h2>
+      <p>Arctic is a powerful Chrome extension that makes summarizing text easier than ever. Whether you're dealing with lengthy articles, detailed research papers, or dense documents, Arctic helps you distill the key points quickly and efficiently.</p>
+    </div>
+
+    <div class="section">
+      <h2>How It Works</h2>
+      <p>Using Arctic is straightforward. Press <strong>Ctrl + Q</strong> (or <strong>Cmd + Q</strong> on Mac) to open the summarization tool. Simply paste your text into the popup, and Arctic will provide a concise summary in seconds.</p>
+    </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Arctic. All rights reserved.</p>
+  </footer>
+</body>
+</html>
